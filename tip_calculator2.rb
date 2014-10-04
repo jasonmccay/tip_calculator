@@ -6,10 +6,10 @@ puts "What was the cost of your meal --> "
 meal_cost = gets.to_f
 
 puts "Cool, what is your local tax rate --> "
-tax_rate = gets
+tax_rate = gets.to_f
 
 puts "Finally, what tip rate do you want to offer --> "
-tip_rate = gets
+tip_rate = gets.to_f
 
 
 # calculate expenses

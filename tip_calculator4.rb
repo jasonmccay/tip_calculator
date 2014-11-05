@@ -15,12 +15,12 @@ class Calculate
 		calculate_percentage_rate(@meal_cost, @tax_rate)
 	end
 
-	def meal_with_tax
-		tax_amount + @meal_cost
-	end
-
 	def tip_amount
 		calculate_percentage_rate(@meal_cost, @tip_rate)
+	end
+
+	def meal_with_tax
+		tax_amount + @meal_cost
 	end
 
 	def total_cost
@@ -62,6 +62,8 @@ tax_rate = gets.to_f
 puts "Finally, what tip rate do you want to offer --> "
 tip_rate = gets.to_f
 
+
+#create class and inject user inputs
 
 tip_calculator = Calculate.new(meal_cost, tax_rate, tip_rate)
 tip_calculator.print_receipt

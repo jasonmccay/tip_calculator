@@ -38,7 +38,7 @@ class Calculate
 		print "The grand total for this meal is then: $%.2f\n" % total_cost
 		puts " "
 		puts "--------------------------------------------------------"
-		puts " "
+		puts "  "
 
 	end
 
